@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryukoku Lib</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <div class="top-header">
+        <div class="top-header__left">
+            <img class="top-header__left__logo" src="https://library.ryukoku.ac.jp/wysiwyg/image/download/1/1012"
+                alt="">
+        </div>
+        <div class="top-header__right">
+            <div class="top-header__right__nav">
+                <h6>龍谷大学図書館</h6>
+                <ul class="top-header__right__nav--ul">
+                    <li class="top-header__right__nav-li"><i class="fa-solid fa-envelope me-1"></i>inquiry</li>
+                    <li class="top-header__right__nav-li"><i class="fa-solid fa-location-dot me-1"></i>access</li>
+                    <li class="top-header__right__nav-li"><i class="fa-solid fa-circle-user me-1"></i>My Library</li>
+                    <li class="top-header__right__nav-li"><i class="fa-solid fa-magnifying-glass me-1"></i>Site search
+                    </li>
+                    <li class="top-header__right__nav-li"><i class="fa-brands fa-twitter me-1"></i>Twitter</li>
+                </ul>
+            </div>
+            <div class="top-heafer__right-bottom">
+                <h6>Ryukoku University Library</h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-header__main-nav">
+        <div class="top-header__main-nav--ul">
+            <div class="top-header__main-nav--li"><a href="/"><i class="fa-solid fa-house me-2"></i> Home</a>
+            </div>
+            <div class="top-header__main-nav--li"><a href="#"><i class="fa-solid fa-circle-info me-2"></i> 図書館案内</a>
+            </div>
+            <div class="top-header__main-nav--li"><a href="#"><i class="fa-solid fa-book-bookmark me-2"></i>利用案内</a>
+            </div>
+            <div class="top-header__main-nav--li"><a href="#"><i class="fa-solid fa-database me-2"></i> 資料を探す</a></div>
+            <div class="top-header__main-nav--li"><a href="#"><i class="fa-solid fa-comments me-2"></i>よくある質問 </a></div>
+            <div class="top-header__main-nav--li"><a href="#"><i class="fa-solid fa-envelope me-2"></i>お問い合わせ</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-info">
+        <div class="info">
+            <div class="info__date">
+                <small>August 2022</small>
+                <h5> 12th (Fri)</h5>
+            </div>
+            <div class="info__hours">
+                <div class="info__hours-left">
+                    <li>Fukakusa</li>
+                    <li>Omiya</li>
+                    <li>Seta</li>
+                </div>
+                <div class="info__hours-center">
+                    <li>Opening hours</li>
+                    <li> 10:00-18:00</li>
+                    <li> 10:00-18:00</li>
+                    <li> 10:00-18:00</li>
+                </div>
+                <div class="info__hours-right">
+                    <li>Opening hours</li>
+                    <li>0%</li>
+                    <li>0%</li>
+                    <li>0%</li>
+                </div>
+            </div>
+            <div class="info__calendar">
+                <small>calendar</small><br>
+                <i class="fa-solid fa-calendar-days"></i>
+            </div>
+        </div>
+
+
+        <div class="search-wrapper">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs " id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                        type="button" role="tab" aria-controls="home" aria-selected="true">Library search</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-white" id="profile-tab" type="button" role="tab"
+                        aria-controls="profile" aria-selected="false">e-journal /
+                        e-book</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-white" id="messages-tab" type="button" role="tab"
+                        aria-controls="messages" aria-selected="false">Search all
+                        together</button>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content mt-3">
+                <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <!-- uncomment this if you want to use the RYUKOKU LIB -->
+                    <!-- <form id="searchForm" action="https://mylibrary.ryukoku.ac.jp/iwjs0005opc/ufirdi.do" method="GET"> -->
+
+                    <!-- This is for Fujitsu LIB -->
+                    <form id="searchForm" action="http://164.69.118.53/webopac/ufirdi.do" method="GET">
+                        <div class="search-wrapper d-flex gap-3">
+                            <input type="text" class="form-control" id="searchText" placeholder="Search...">
+                            <button type="submit" class="btn btn-danger">Search</button>
+                        </div>
+                    </form>
+                    <small>◆You can search for books and journals held by the Ryukoku University Library.</small>
+                </div>
+
+                <div class="row mt-3 d-flex justify-content-between gap-2 row-block mx-1">
+                    <p>Quick Links</p>
+                    <div class="col p-2 quick-blocks">
+                        Datalist
+                    </div>
+                    <div class="col p-2  quick-blocks">
+                        CiNii
+                    </div>
+                    <div class="col p-2  quick-blocks">
+                        Repository
+                    </div>
+                </div>
+                <div class="row mt-2 d-flex justify-content-between gap-2 mx-1">
+                    <div class="col p-2 quick-blocks">
+                        Electronic library service LibrariE
+                    </div>
+                    <div class="col p-2  quick-blocks">
+                        Nikkei Telecon 21
+                    </div>
+                    <div class="col p-2  quick-blocks">
+                        new arrivals
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+
+        var searchText = document.getElementById("searchText");
+        var form = document.getElementById("searchForm");
+
+        form.addEventListener('submit', function (e) {
+            if (searchText.value === "") {
+                e.preventDefault();
+                alert("Field must not be empty!");
+                e.stopPropagation();
+                return false;
+            }
+            e.preventDefault();
+
+            // if you wan to use the RYUKOKU LIBRARY uncomment below
+            // var url = $(this).attr('action') + "?ufi_target=ctlsrh&srhRevTagFlg=true&words=" + searchText.value + "&tab=on";
+
+            // this is for Fujitsu Library
+            var url = $(this).attr('action') + "?ufi_target=ctlsrh&srhRevTagFlg=true&tab=on&words=" + searchText.value;
+
+            window.open(url, '_blank');
+
+        })
+
+
+    </script>
+</body>
+
+
+</html>

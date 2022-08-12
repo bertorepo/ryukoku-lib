@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.top-header {
+  background-color: white;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  margin: 0;
+  align-items: center;
+}
+.top-header .top-header__left {
+  background-color: white;
+  height: 100%;
+  width: 5rem;
+  text-align: center;
+}
+.top-header .top-header__left .top-header__left__logo {
+  width: 4rem;
+  height: 4rem;
+}
+.top-header .top-header__right {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+}
+.top-header .top-header__right .top-header__right__nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: rgb(98, 122, 134);
+  padding: 0.2rem 0;
+  height: 100%;
+}
+.top-header .top-header__right .top-header__right__nav h6 {
+  position: absolute;
+  right: 0;
+  left: 47%;
+  width: 100%;
+  color: white;
+}
+.top-header .top-header__right .top-header__right__nav .top-header__right__nav--ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 2rem;
+  margin-right: 2rem;
+  color: white;
+}
+.top-header .top-header__right .top-heafer__right-bottom {
+  text-align: center;
+  padding-top: 0.4rem;
+  color: rgb(98, 122, 134);
+}
+
+.top-header__main-nav {
+  width: 100%;
+  height: 2.5rem;
+  background-color: rgb(150, 169, 179);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-header__main-nav .top-header__main-nav--ul {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-header__main-nav .top-header__main-nav--ul .top-header__main-nav--li {
+  height: 100%;
+  padding: 2rem;
+  border-right: 1px solid white;
+}
+.top-header__main-nav .top-header__main-nav--ul .top-header__main-nav--li a {
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-header__main-nav .top-header__main-nav--ul .top-header__main-nav--li:first-child {
+  border-left: 1px solid white;
+}
+
+.container {
+  padding: 0 10rem 0 10rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  background-color: white !important;
+}
+.container .info {
+  background-color: rgba(15, 15, 15, 0.7);
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem;
+  color: white;
+}
+.container .info .info__date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .info .info__hours {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  font-weight: bold;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+.container .info .info__hours .info__hours-left {
+  text-align: center;
+  margin-top: 1.2rem;
+}
+.container .info .info__hours .info__hours-left li {
+  font-size: 0.8rem;
+  list-style: none;
+}
+.container .info .info__hours .info__hours-center {
+  text-align: center;
+}
+.container .info .info__hours .info__hours-center li {
+  font-size: 0.8rem;
+  list-style: none;
+}
+.container .info .info__hours .info__hours-right {
+  text-align: center;
+}
+.container .info .info__hours .info__hours-right li {
+  font-size: 0.8rem;
+  list-style: none;
+}
+.container .info .info__calendar {
+  text-align: center;
+}
+.container .info .info__calendar i {
+  font-size: 2rem;
+}
+.container .search-wrapper {
+  background-color: rgb(98, 122, 134);
+  margin-top: 1rem;
+  padding: 1.5rem;
+  color: white !important;
+}
+.container .search-wrapper .nav-tabs {
+  margin-top: 2rem !important;
+}
+.container .search-wrapper .tab-content {
+  padding: 0 !important;
+}
+.container .search-wrapper .tab-content .search-wrapper {
+  margin-left: 0 !important;
+}
+.container .search-wrapper .tab-content small {
+  margin-left: 1rem;
+}
+.container .search-wrapper .tab-content .quick-blocks {
+  background-color: white;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
